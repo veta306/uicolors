@@ -10,11 +10,10 @@ export default function Palette({ palette }) {
     >
       <div className={styles.palette}>
         <div className={styles.colors}>
-          {palette.colors.map((color, index) => (
+          {palette.colors.map((colorObject, index) => (
             <div
               key={index}
-              className="color"
-              style={{ backgroundColor: color.color }}
+              style={{ backgroundColor: colorObject.color }}
             ></div>
           ))}
         </div>

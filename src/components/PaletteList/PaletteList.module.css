@@ -5,3 +5,18 @@
   grid-template-rows: repeat(3, 200px);
   gap: 40px 50px;
 }
+.header {
+  height: 105px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 105px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform-origin: 50% 50%;
+}
+.header:active {
+  transform: scale(0.95);
+}

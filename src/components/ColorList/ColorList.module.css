@@ -1,0 +1,92 @@
+.copied {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 10;
+  top: 0;
+  transition: opacity 0.4s;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.copied-text {
+  width: 100%;
+  font-size: 120px;
+  line-height: 180px;
+  height: 180px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px #2c3e50;
+  font-weight: 600;
+  background: hsla(0, 0%, 100%, 0.2);
+}
+.copied-color {
+  text-shadow: 1px 1px #444;
+  height: 60px;
+  font-size: 32px;
+  color: #ecf0f1;
+  margin-top: 60px;
+}
+.colors {
+  width: 100%;
+  height: 819px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.color {
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+}
+.color-name {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  text-shadow: 1px 1px #444;
+}
+.header {
+  height: 50px;
+  background-color: white;
+  padding: 0 20px;
+  line-height: 50px;
+}
+.footer {
+  height: 50px;
+  background-color: white;
+  text-align: right;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.link {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+.copy {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -22.5px;
+  opacity: 0;
+  transition: transform 0.2s, opacity 0.3s;
+  border: 2px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 36px;
+}
+.color:hover .copy {
+  opacity: 1;
+}

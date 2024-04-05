@@ -1,17 +1,22 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import PaletteList from "../PaletteList/PaletteList";
 import palettes from "../../assets/pallete.json";
+import ColorList from "../ColorList/ColorList";
 
 export default function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route
           exact
           path="/"
           element={<PaletteList palettes={palettes}></PaletteList>}
-        ></Route>
+        />
+        <Route
+          path="/palette/:id"
+          element={<ColorList palettes={palettes} />}
+        />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
